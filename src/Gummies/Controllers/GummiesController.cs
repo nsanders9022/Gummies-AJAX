@@ -16,7 +16,7 @@ namespace Gummies.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(db.Gummies.ToList());
+            return View();
         }
 
         //public IActionResult Details(int id)

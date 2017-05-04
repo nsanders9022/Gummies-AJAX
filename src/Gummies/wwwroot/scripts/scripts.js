@@ -49,4 +49,18 @@
             }
         });
     });
+
+    $('.show-edit').click(function () {
+        console.log(this.id);
+        var route = '#result-edit-' + this.id;
+        console.log(route);
+        $.ajax({
+            type: 'GET',
+            dataType: 'html',
+            url: 'Gummies/Edit/' + this.id,
+            success: function (result) {
+                $(route).html(result);
+            }
+        });
+    });
 })

@@ -15,8 +15,11 @@
             <h5>@Html.DisplayNameFor(model => model.Cost): $@Html.DisplayFor(model => model.Cost)/bag</h5>
             <h5 class="detail-country">Imported from @Html.DisplayFor(model => model.Country)</h5>
             <h5 class="detail-description">Get a taste of paradise with these juicy, delicious and fun-filled gummies.</h5>
+            <h2>EDIT!!!!!</h2>
+            <h4 class="show-edit" id="@Html.DisplayFor(model => model.GummyId)">Edit this gummy</h4>
+            <div id="result-edit-@Html.DisplayFor(model => model.GummyId)"></div>
 
-            <p>@Html.ActionLink("Edit", "Edit", new { id = Model.GummyId })</p>
+            @*<p>@Html.ActionLink("Edit", "Edit", new { id = Model.GummyId })</p>*@
             @*<p>@Html.ActionLink("Delete", "Delete", new { id = Model.GummyId })</p>*@
 
         </div>
@@ -58,5 +61,7 @@
             </div>
         </div>
     </div>
+
+
 
 

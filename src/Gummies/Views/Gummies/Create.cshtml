@@ -6,7 +6,7 @@
 }
 
 <div class="container">
-    <h3>Add a new product</h3>
+    @*<h3>Add a new product</h3>
     @using (Html.BeginForm())
     {
         @Html.LabelFor(model => model.Name)
@@ -25,6 +25,24 @@
         @Html.TextBoxFor(model => model.Image)
         <input type="submit" value="Add new product" />
 
-    }
+    }*@
+
+    <form action="Create" class="new-gummy">
+        <label for="newName">Name: </label>
+        <input type="text" name="newName" />
+
+        <label for="newCost">Cost in Dollars Per Bag: </label>
+        <input type="text" name="newCost" />
+
+        <label for="newCountry">Country of Origin: </label>
+        <input type="text" name="newCountry" />
+
+        <label for="newImage">URL link to image: </label>
+        <input type="text" name="newImage" />
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result-add"></div>
 
 </div>

@@ -37,11 +37,12 @@ namespace Gummies.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create (Gummy gummy)
+        public IActionResult Create (string newName, string newCost, string newCountry, string newImage)
         {
-            db.Gummies.Add(gummy);
+            Gummy newGummy = new Gummy(newName, newCost, newCountry, newImage);
+            db.Gummies.Add(newGummy);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return Json(newGummy);
         }
 
         public IActionResult Edit(int id)

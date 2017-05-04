@@ -33,18 +33,19 @@
     <p>@Html.ActionLink("Back to Details Page", "Details", new { id = Model.GummyId })</p>*@
 
     <form action="Edit" class="edit-gummy">
-        <input type="hidden" id="@Html.DisplayFor(model => model.GummyId)" value ="PATCH" />
-        <label for="edit-name">New Name: </label>
-        <input id="edit-name" name="edit-name" type="text" />
+        <input type="hidden" name="id" value="@Model.GummyId">
 
-        <label for="edit-cost">New Cost: </label>
-        <input id="eedit-cost" name="edit-cost" type="text" />
+        <label for="newName">New Name: </label>
+        <input name="newName" type="text" value="@Model.Name"/>
 
-        <label for="edit-country">New Country: </label>
-        <input id="edit-country" name="edit-country" type="text" />
+        <label for="newCost">New Cost: </label>
+        <input name="newCost" type="text" value="@Model.Cost"/>
 
-        <label for="edit-image">New Image: </label>
-        <input id="edit-image" name="edit-imageme" type="text" />
+        <label for="newCountry">New Country: </label>
+        <input name="newCountry" type="text" value="@Model.Cost"/>
+
+        <label for="newImage">New Image: </label>
+        <input name="newImage" type="text" value="@Model.Image"/>
 
         <button type="submit">Submit</button>
     </form>

@@ -52,11 +52,16 @@ namespace Gummies.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Gummy gummy)
+        public IActionResult Edit(string newName, string newCost, string newCountry, string newImage, int id)
         {
-            db.Entry(gummy).State = EntityState.Modified;
+            var thisGummy = db.Gummies.FirstOrDefault(gummies => gummies.GummyId == id);
+            thisGummy.Name = newName;
+            thisGummy.Cost = newCost;
+            thisGummy.Country = newCountry;
+            thisGummy.Image = newImage;
+            db.Entry(thisGummy).State = EntityState.Modified;
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return Json(thisGummy);
         }
 
         public IActionResult Delete(int id)

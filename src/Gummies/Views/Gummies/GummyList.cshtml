@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Gummies.Models.Gummy>
+
+@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div actions="GummyList" id="gummy-list-div">
+    @foreach (var listGummy in Model)
+            {
+        <div id="result-delete-@listGummy.GummyId">
+            <div class="row" id="@listGummy.GummyId">
+                <div class="col-xs-4 product-square">
+                    <img class="index-pic" src="@listGummy.Image" alt="image of product" />
+
+                    <p class="candy-name">@listGummy.Name</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <h4 class="show-details" id="@listGummy.GummyId"> Show details</h4>
+                <div id="result-details-@listGummy.GummyId"></div>
+                <h4 class="show-delete" id="@listGummy.GummyId">Delete this gummy</h4>
+                <div></div>
+            </div>
+        </div>
+    }
+</div>

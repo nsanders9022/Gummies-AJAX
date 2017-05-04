@@ -6,9 +6,9 @@
 }
 
 
-    <div class="jumbotron" id="top-bar">
-        <h1 id="gums-jels">Gummies & Jellies</h1>
-    </div>
+<div class="jumbotron" id="top-bar">
+    <h1 id="gums-jels">Gummies & Jellies</h1>
+</div>
 <div class="container">
     <div class="col-xs-3">
         <div class="column-header">
@@ -38,7 +38,7 @@
         </div>
 
         <p>@Html.ActionLink("Add new item", "Create")</p>
-        
+
 
     </div>
 
@@ -46,28 +46,15 @@
         <div class="row">
             <h4 class="show-create"> Show Create Partial</h4>
             <div id="result-create"></div>
-    @foreach (var listGummy in Model)
-            {
-        <div id="result-delete-@listGummy.GummyId">
-        <div class="row" id="@listGummy.GummyId">
-                <div class="col-xs-4 product-square">
-                    <img class="index-pic" src="@listGummy.Image" alt="image of product" />
-
-                    <p class="candy-name">@listGummy.Name</p>
+            
+            <div class="gummy-list">
+                <div class="all-gummies">
+                    <h2>Inside gummy list</h2>
                 </div>
             </div>
 
-            <div class="row">
-
-                <h4 class="show-details" id="@listGummy.GummyId"> Show details</h4>
-                <div id="result-details-@listGummy.GummyId"></div>
-                <h4 class="show-delete" id="@listGummy.GummyId">Delete this gummy</h4>
-                <div ></div>
-            </div>
-            </div>
-    }
         </div>
-            
+
     </div>
 
 </div>

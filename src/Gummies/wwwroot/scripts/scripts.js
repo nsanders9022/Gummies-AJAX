@@ -95,5 +95,15 @@
                 $('#result-edit').html(resultMessage);
             }
         });
-    });  
+    });
+
+    $('.gummy-list').ready(function () {
+        $.ajax({
+            type: 'GET',
+            url: 'Gummies/GummyList',
+            success: function (result) {
+                $('.all-gummies').html(result)
+            }
+        })
+    })
 });

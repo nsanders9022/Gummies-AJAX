@@ -78,5 +78,10 @@ namespace Gummies.Controllers
             db.SaveChanges();
             return Json(thisGummy);
         }
+
+        public IActionResult GummyList()
+        {
+            return View(db.Gummies.ToList());
+        }
     }
 }

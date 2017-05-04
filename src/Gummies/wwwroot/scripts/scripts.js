@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    //DETAILS
     $('.show-details').click(function () {
         console.log(this.id);
         var route = '#result-details-' + this.id;
@@ -12,6 +13,7 @@
             }
         });
     });
+    //CREATE
     $('.show-create').click(function () {
         $.ajax({
             type: 'GET',
@@ -35,7 +37,7 @@
             }
         });
     });
-
+    //DELETE
     $('.show-delete').click(function () {
         console.log(this.id);
         var route = '#result-delete-' + this.id;
@@ -50,6 +52,22 @@
         });
     });
 
+    $('.delete-gummy').click(function () {
+        //event.preventDefault();
+        var route = '#result-delete-' + this.id;
+        console.log(this.value);
+        console.log("inside delete button");
+        $.ajax({
+            type: 'POST',
+            url: 'Gummies/Delete/' + this.value,         
+            success: function (result) {
+                $(route).remove();
+            }
+        });
+    });
+
+        
+    //EDIT
     $('.show-edit').click(function () {
         console.log(this.id);
         var route = '#result-edit-' + this.id;
@@ -63,4 +81,19 @@
             }
         });
     });
-})
+
+    $('.edit-gummy').submit(function (event) {
+        event.preventDefault();
+        var route = '#result-edit-' + this.id;
+        $.ajax({
+            url: 'Gummies/Edit/' + this.id,
+            type: 'POST',
+            dataType: 'json',
+            data: $(this).serialize(),
+            success: function (result) {
+                var resultMessage = "Data has been edited";
+                $('#result-edit').html(resultMessage);
+            }
+        });
+    });  
+});

@@ -8,7 +8,7 @@
 <div class="container">
     <h4 id="edit-header">Edit @Html.DisplayFor(model => model.Name)</h4>
 
-    @using (Html.BeginForm())
+    @*@using (Html.BeginForm())
     {
         @Html.HiddenFor(model => model.GummyId)
 
@@ -30,6 +30,23 @@
 
         <input type="submit" value="Save" />
     }
-    <p>@Html.ActionLink("Back to Details Page", "Details", new { id = Model.GummyId })</p>
+    <p>@Html.ActionLink("Back to Details Page", "Details", new { id = Model.GummyId })</p>*@
+
+    <form action="Edit" class="edit-gummy">
+        <input type="hidden" id="@Html.DisplayFor(model => model.GummyId)" value ="PATCH" />
+        <label for="edit-name">New Name: </label>
+        <input id="edit-name" name="edit-name" type="text" />
+
+        <label for="edit-cost">New Cost: </label>
+        <input id="eedit-cost" name="edit-cost" type="text" />
+
+        <label for="edit-country">New Country: </label>
+        <input id="edit-country" name="edit-country" type="text" />
+
+        <label for="edit-image">New Image: </label>
+        <input id="edit-image" name="edit-imageme" type="text" />
+
+        <button type="submit">Submit</button>
+    </form>
     
 </div>

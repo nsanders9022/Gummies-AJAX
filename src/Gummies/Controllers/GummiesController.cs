@@ -71,7 +71,7 @@ namespace Gummies.Controllers
             var thisGummy = db.Gummies.FirstOrDefault(gummies => gummies.GummyId == id);
             db.Gummies.Remove(thisGummy);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return Json(thisGummy);
         }
     }
 }

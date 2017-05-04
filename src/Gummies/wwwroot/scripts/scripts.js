@@ -35,4 +35,18 @@
             }
         });
     });
+
+    $('.show-delete').click(function () {
+        console.log(this.id);
+        var route = '#result-delete-' + this.id;
+        console.log(route);
+        $.ajax({
+            type: 'GET',
+            dataType: 'html',
+            url: 'Gummies/Delete/' + this.id,
+            success: function (result) {
+                $(route).html(result);
+            }
+        });
+    });
 })

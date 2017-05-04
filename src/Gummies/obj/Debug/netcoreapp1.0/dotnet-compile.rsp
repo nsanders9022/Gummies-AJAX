@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\bin\Debug\netcoreapp1.0\Gummies.dll
+--temp-output:C:\Users\epicodus\Desktop\GummyBears\src\Gummies\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\GummyBears\src\Gummies\bin\Debug\netcoreapp1.0\Gummies.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -199,13 +199,13 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\obj\Debug\netcoreapp1.0\Gummiesdotnet-compile.deps.json",Gummies.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Controllers\GummiesController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Migrations\20170421212835_Initial.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Migrations\20170421212835_Initial.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Migrations\GummiesContextModelSnapshot.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Models\GummiesContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummies\src\Gummies\Models\Gummy.cs
+--resource:"C:\Users\epicodus\Desktop\GummyBears\src\Gummies\obj\Debug\netcoreapp1.0\Gummiesdotnet-compile.deps.json",Gummies.deps.json
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Program.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Startup.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Controllers\GummiesController.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Migrations\20170421212835_Initial.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Migrations\20170421212835_Initial.Designer.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Migrations\GummiesContextModelSnapshot.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Models\GummiesContext.cs
+C:\Users\epicodus\Desktop\GummyBears\src\Gummies\Models\Gummy.cs

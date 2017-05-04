@@ -19,6 +19,12 @@ namespace Gummies.Controllers
             return View(db.Gummies.ToList());
         }
 
+        //public IActionResult Details(int id)
+        //{
+        //    var thisGummy = db.Gummies.FirstOrDefault(gummies => gummies.GummyId == id);
+        //    return View(thisGummy);
+        //}
+
         public IActionResult Details(int id)
         {
             var thisGummy = db.Gummies.FirstOrDefault(gummies => gummies.GummyId == id);
